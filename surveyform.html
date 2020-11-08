@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="title">
+                <h1>Freecodecamp Survey Form</h1>
+            </div>
+            <div id="discription">
+                <p>Thank you for taking the time to help us improve the platform</p>
+            </div>
+        </header>
+
+        <form id="survey-form">
+            <div class="box">
+                <div id="name">
+                    <label for="name-lable"> NAME </label><br>
+                    <input id="name-lable" type="text" placeholder="username" required>
+                </div>
+                <br>
+                <div id="email">
+                    <label for="email-lable"> Email </label><br>
+                    <input id="email-lable" type="email" placeholder="email" required>
+                </div>
+                <br>
+                <div id="number">
+                    <lable for="number-lable">Contact Number </lable> <br>
+                    <input id="number-lable" type="number" placeholder="contact" required minlength="10" maxlength="12">
+                </div>
+                <br>
+                <div id="dropdown">
+                    <label for="dropdown"> Which position best describes you </label><br>
+                    <input type="text" name="dropdown" id="dropdown" list="dropdown1" required>
+                    <datalist id="dropdown1">
+                        <option>student </option>
+                        <option>learner</option>
+                        <option>Employee</option>
+                        <option>entreprenuer</option>
+                    </datalist>
+                </div>
+                <br>
+                <div class="radio">
+                    <h3> which of the below given roles best describe you</h3>
+
+                    <input type="radio" name="radio-group" id="front-end">
+                    <label for="front-end">Front-end Developer</label>
+
+                    <br>
+                    <input type="radio" name="radio-group" id="back-end">
+                    <label for="back-end">back-end Developer</label>
+
+                    <br>
+                    <input type="radio" name="radio-group" id="ui/ux">
+                    <label for="UI UX">UI/UX Developer</label>
+
+                    <br>
+                    <input type="radio" name="radio-group" id="Dev-OPS">
+                    <label for="Dev-OPS"> Dev-OPS</label>
+
+                    <br>
+                    <input type="radio" name="radio-group" id="game-dev">
+                    <label for="Game-dev"> Game Developer</label>
+
+                    <br>
+                </div>
+                <div class="checkbox">
+                    <p>what is the difficulty level of this cource</p>
+                    <br>
+                    <input type="checkbox" id="easy" value="easy">
+                    <label for="easy">easy</label>
+                    <br>
+                    <input type="checkbox" id="medium" value="medium">
+                    <label for="meduim"> medium </label>
+                    <br>
+                    <input type="checkbox" id="hard" value="hard">
+                    <label for="hard"> Hard</label>
+
+                </div>
+                <br>
+                <div class="textarea">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+
+                <br>
+                <div id="button">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
